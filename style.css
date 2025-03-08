@@ -52,6 +52,21 @@ a {
   /* để lesson luôn cách lề một khoảng */
 }
 
+.line-clamp {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+}
+
+.line-clamp.lv2 {
+  --line-clamp: 2;
+}
+
+.break-all {
+  word-break: break-all;
+}
+
 /* ==============================================header================================================= */
 .header {
   background: #fffcf4;
@@ -341,10 +356,15 @@ header .body {
   border-radius: 12px;
   background: #ffffff;
   box-shadow: 0px 18px 36px 0px #0000000d;
+  width: 370px;
 }
 
 .popular-bottom .course-item .info {
   padding: 16px 22px 22px 22px;
+  /* width: 370px; */
+  /* height: 466px; */
+  /* top: 1279px;
+  left: 135px; */
 }
 
 .popular-bottom .course-item .title {
